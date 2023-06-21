@@ -110,7 +110,7 @@ def go(config: DictConfig):
         "main",
         parameters={
             "model_export": config["random_forest_pipeline"]["export_artifact"],
-            "test_data": "test_train.csv"
+            "test_data": "test_train.csv:latest"
         },
     )
 
